@@ -21,13 +21,18 @@
     function criarLista(number){
         // O valor obtido!
         document.getElementById("number").innerHTML=number;
-        // A lista vazia!
+        console.log(number);
+        // List Clear !
         var ul = document.getElementById("lista");
-        // Criando apenas um item!
-        var li = document.createElement("li");
-        li.classList.add("list-group-item","fas","fa-user");
-        // Adicionando apenas um item!
-        ul.appendChild(li);
+        
+        for(var i = 0; i < number; i++){
+          // Criando apenas um item!
+          var li = document.createElement("li");
+          li.classList.add("list-group-item","fas","fa-user");
+          // Adicionando apenas um item!
+          ul.appendChild(li);
+        }
+        
     }
     /********************************************************************/
     /*
